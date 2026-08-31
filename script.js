@@ -7,10 +7,17 @@ const desafios =[
 ];
 
 function iniciarDesafio() {
-    const nome=document.getElementById("name").value;
-}
+    const name=document.getElementById("name").value;
 
-if (nome === "") {
-    alert("Digite seu nome para começar!");
-    return;
-}    
+    if (name === "") {
+        alert("Digite seu nome para começar!");
+        return;
+    }    
+
+    const numero = Math.floor(Math.random()*desafios.length)
+    const desafio = desafios[numero];
+
+    document.getElementById("resultado").innerHTML =
+    "<h2>Olá ${name}!</h2>"
+   "<p>Seu desafio é: ${desafio}!</p>"
+}
