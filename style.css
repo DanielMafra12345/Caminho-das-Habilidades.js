@@ -11,8 +11,15 @@ body{
 h1{
     color: #00A8FF;
     text-align:center;
-    font: 1em "Orbitron", sans-serif;
+    font: 2em "Orbitron", sans-serif;
     text-size-adjust: 30;
+}
+
+h2{
+    color: #00A8FF;
+    text-align:center;
+    font: 1em "Orbitron", sans-serif;
+    text-size-adjust: 30;  
 }
 
 button{
@@ -30,6 +37,14 @@ button{
     font-family: "Geo", sans-serif;
     font-weight: 400;
     font-style: italic;
+}
+
+h3 {
+    color: #00A8FF;
+}
+
+h4{
+    color: #0B3D91;
 }
 
 footer{
