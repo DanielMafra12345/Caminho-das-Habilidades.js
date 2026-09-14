@@ -18,6 +18,6 @@ function iniciarDesafio() {
     const desafio = desafios[numero];
 
     document.getElementById("resultado").innerHTML =
-    "<h2>Olá ${name}!</h2>"
-   "<p>Seu desafio é: ${desafio}!</p>"
+    `<h2>Olá ${name}!</h2>`;
+   `<p>Seu desafio é: ${desafio}!</p>`;
 }
