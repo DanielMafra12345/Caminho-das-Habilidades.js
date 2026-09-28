@@ -54,7 +54,7 @@ function avaliarResposta(){
 
     //1- critério de avaliação - quantidades de letras
     if(resposta.length >= 30){
-        pontos += 50;
+        pontos += 30;
     }
 
     //2-
@@ -65,7 +65,7 @@ function avaliarResposta(){
         texto.includes("criar")||
         texto.includes("praticar")
     ){
-      pontos += 50;
+      pontos += 35;
     }
 
     if(
@@ -73,7 +73,7 @@ function avaliarResposta(){
         texto.includes("analisar")||
         texto.includes("pão")
     ){
-      pontos += 50;
+      pontos += 35;
     }
 
     let nível;
