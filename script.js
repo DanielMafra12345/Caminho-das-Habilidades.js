@@ -29,14 +29,14 @@ function iniciarDesafio() {
    <br></br>
 
    <textarea
-   id =" resposta"
+   id ="resposta"
    rows = "5"
    cols = "40"
    placeholder = "Digite aqui o seu projeto">
    </textarea>
    
    <br></br>
-
+  
    <button onclick="avaliarResposta()">🚀Enviar</button>`;
 }
 
@@ -52,49 +52,53 @@ function avaliarResposta(){
 
     let pontos = 0;
 
-//1- critério de avaliação - quantidades de letras
+    //1- critério de avaliação - quantidades de letras
     if(resposta.length >= 30){
         pontos += 50;
     }
 
     //2-
-const texto = resposta.toLowerCase();
+    const texto = resposta.toLowerCase();
 
-if(
-    texto.incluides("desenvolver")||
-    texto.incluides("criar")||
-    texto.incluides("praticar")
-   
-){
-  pontos += 50;
+    if(
+        texto.includes("desenvolver")||
+        texto.includes("criar")||
+        texto.includes("praticar")
+    ){
+      pontos += 50;
+    }
+
+    if(
+        texto.includes("resolver")||
+        texto.includes("analisar")||
+        texto.includes("pão")
+    ){
+      pontos += 50;
+    }
+
+    let nível;
+
+    if(pontos >= 100){
+        nível = "PÃO COM OVO SUPREMO!";
+    }
+
+    else if (pontos >= 70){
+        nível = "Inventor de Idéias";
+    }
+
+    else if (pontos >= 65){
+        nível = "Desenvolvedor";
+    }
+
+    else{
+        nível = "Explorador";
+    }
+
+    // Resultado aparece quando o botão Enviar for clicado
+    document.getElementById("resultado").innerHTML += `
+        <h2>Para ver seu resultado, selecione a área abaixo:</h2>
+        <h4>Participante: ${name}</h4>
+        <h4>Pontos: ${pontos}</h4>
+        <h4>${nível}</h4>
+    `;
 }
-
-if(
-    texto.incluides("resolver")||
-    texto.incluides("analisar")||
-    texto.incluides("pão")
-){
-  pontos += 50;
-}
-
-let nível;
-
-if(pontos >= 100){
-    nível = "PÃO COM OVO SUPREMO!";
-}
-
-if(pontos >= 70){
-    nível = "Inventor de Idéias";
-}
-
-else if (pontos >= 65){
-    nível = "Desenvolvedor"
-}
-
-else{
-    nível = "Explorador"
-}
-
-}
-
-
