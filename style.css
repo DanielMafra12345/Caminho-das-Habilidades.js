@@ -12,7 +12,7 @@ h1{
     color: #00A8FF;
     text-align:center;
     font: 2em "Orbitron", sans-serif;
-    text-size-adjust: 30;
+    text-size-adjust: 30;   
 }
 
 h2{
@@ -23,28 +23,27 @@ h2{
 }
 
 button{
-    color: #0047AB;
+    color: #000000;
     text-size-adjust: 10;
+    border: none;
+    background: linear-gradient(135deg, #00A8FF, #0B3D91);
+    border-radius: 10%;
 }
 
-.geo-regular {
-    font-family: "Geo", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-  
-.geo-regular-italic {
-    font-family: "Geo", sans-serif;
-    font-weight: 400;
-    font-style: italic;
+label{
+    display: block;
+    border: #00A8FF;
+    font-size: medium;
 }
 
 h3 {
     color: #00A8FF;
+    font: 1em "Orbitron", sans-serif;
 }
 
 h4{
     color: #0B3D91;
+    font: 2em "Orbitron", sans-serif;
 }
 
 footer{
