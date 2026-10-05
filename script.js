@@ -79,7 +79,7 @@ function avaliarResposta(){
     let nível;
 
     if(pontos >= 100){
-        nível = "PÃO COM OVO SUPREMO!";
+        nível = "HACKER!";
     }
 
     else if (pontos >= 70){
