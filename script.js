@@ -99,6 +99,9 @@ function avaliarResposta(){
         <h2>Para ver seu resultado, selecione a área abaixo:</h2>
         <h4>Participante: ${name}</h4>
         <h4>Pontos: ${pontos}</h4>
-        <h4>${nível}</h4>
+        <h4>Nível: ${nível}</h4>
+         <button onclick="location.reload()">
+        Novo desafio!
+       </button>
     `;
 }
